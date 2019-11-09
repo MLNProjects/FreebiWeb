@@ -1,0 +1,17 @@
+.header-wrapper {
+  top: 0;
+  opacity: 0.8;
+  position: absolute;
+  z-index: 500;
+  width: 100%;
+  background: black;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+.company-title {
+  margin: 0;
+  padding: 0;
+  color: white;
+}
