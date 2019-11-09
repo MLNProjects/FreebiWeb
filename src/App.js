@@ -1,7 +1,10 @@
 import React from "react";
+
 import "./App.css";
 import MapView from "./MapView";
 import useInterval from "./hooks/useInterval";
+
+import Header from "./Components/Header/header";
 
 function App() {
   const [isOn, setIsOn] = React.useState(false);
@@ -31,6 +34,8 @@ function App() {
 
   return isOn ? (
     <div style={{ height: "100vh", width: "100vw" }}>
+      <Header />
+
       <MapView locations={positions}></MapView>
     </div>
   ) : (
