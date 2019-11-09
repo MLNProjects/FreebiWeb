@@ -1,37 +1,41 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import MapView from './MapView';
+import React from "react";
+import "./App.css";
+import MapView from "./MapView";
+import useInterval from "./hooks/useInterval";
 
 function App() {
-	const [isOn, setIsOn] = React.useState(false);
-	const [positions, setPositions] = React.useState([]);
+  const [isOn, setIsOn] = React.useState(false);
+  const [positions, setPositions] = React.useState([]);
 
-	navigator.geolocation.getCurrentPosition(p => setPositions([...positions, p]));
+  const updateLocations = () => {
+    if ("geolocation" in navigator) {
+      navigator.geolocation.getCurrentPosition(p => {
+        const coord = {
+          lat: p.coords.latitude + Math.random(),
+          long: p.coords.longitude
+        };
+        setPositions([...positions, coord]);
+      });
+    } else {
+      /* geolocation IS NOT available */
+    }
+  };
 
-	const updateLocations = () => {
-		if ('geolocation' in navigator) {
-			console.log(positions);
-			navigator.geolocation.getCurrentPosition(p => setPositions([...positions, p]));
-		} else {
-			/* geolocation IS NOT available */
-		}
-	};
+  useInterval(() => {
+    updateLocations();
+  }, 5000);
 
-	React.useEffect(() => {
-		const interval = setInterval(() => {
-			updateLocations();
-		}, 1000);
-		return () => clearInterval(interval);
-	}, []);
+  console.log(positions);
 
-	return isOn ? (
-		<div style={{ height: '100vh', width: '100vw' }}>
-			<MapView locations={positions}></MapView>
-		</div>
-	) : (
-		<button onClick={() => setIsOn(true)}>turn on</button>
-	);
+  React.useEffect(() => {}, []);
+
+  return isOn ? (
+    <div style={{ height: "100vh", width: "100vw" }}>
+      <MapView locations={positions}></MapView>
+    </div>
+  ) : (
+    <button onClick={() => setIsOn(true)}>turn on</button>
+  );
 }
 
 export default App;
