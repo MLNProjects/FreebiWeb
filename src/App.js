@@ -4,6 +4,7 @@ import './App.css';
 import MapView from './MapView';
 
 function App() {
+	const [isOn, setIsOn] = React.useState(false);
 	const [positions, setPositions] = React.useState([]);
 
 	navigator.geolocation.getCurrentPosition(p => setPositions([...positions, p]));
@@ -24,10 +25,12 @@ function App() {
 		return () => clearInterval(interval);
 	}, []);
 
-	return (
+	return isOn ? (
 		<div style={{ height: '100vh', width: '100vw' }}>
 			<MapView locations={positions}></MapView>
 		</div>
+	) : (
+		<button onClick={() => setIsOn(true)}>turn on</button>
 	);
 }
 
