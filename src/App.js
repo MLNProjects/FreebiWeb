@@ -1,46 +1,38 @@
-import React from "react";
+import React from 'react';
+import './App.css';
+import Header from './Components/Header/header';
+import useInterval from './hooks/useInterval';
+import MapView from './MapView';
+import usePosition from './hooks/usePosition';
+import euclidianDist from './utilities/euclidianDist';
 
-import "./App.css";
-import MapView from "./MapView";
-import useInterval from "./hooks/useInterval";
-
-import Header from "./Components/Header/header";
+const MIN_DISTANCE_FOR_LOCATION_UPDATE = 0.1;
 
 function App() {
-  const [isOn, setIsOn] = React.useState(false);
-  const [positions, setPositions] = React.useState([]);
+	const position = usePosition();
 
-  const updateLocations = () => {
-    if ("geolocation" in navigator) {
-      navigator.geolocation.getCurrentPosition(p => {
-        const coord = {
-          lat: p.coords.latitude + Math.random(),
-          long: p.coords.longitude
-        };
-        setPositions([...positions, coord]);
-      });
-    } else {
-      /* geolocation IS NOT available */
-    }
-  };
+	const [locations, setLocations] = React.useState([]);
 
-  useInterval(() => {
-    updateLocations();
-  }, 5000);
+	React.useEffect(() => {
+		if (position.lat) {
+			if (
+				locations.length === 0 ||
+				euclidianDist(
+					[locations[locations.length - 1].lat, locations[locations.length - 1].lng],
+					[position.lat, position.lng]
+				) > MIN_DISTANCE_FOR_LOCATION_UPDATE
+			) {
+				setLocations(locations => [...locations, { lat: position.lat, lng: position.lng }]);
+			}
+		}
+	}, [position]);
 
-  console.log(positions);
-
-  React.useEffect(() => {}, []);
-
-  return isOn ? (
-    <div style={{ height: "100vh", width: "100vw" }}>
-      <Header />
-
-      <MapView locations={positions}></MapView>
-    </div>
-  ) : (
-    <button onClick={() => setIsOn(true)}>turn on</button>
-  );
+	return (
+		<div style={{ height: '100vh', width: '100vw' }}>
+			<Header />
+			<MapView locations={locations}></MapView>
+		</div>
+	);
 }
 
 export default App;
