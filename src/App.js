@@ -1,9 +1,8 @@
 import React from 'react';
 import './App.css';
 import Header from './Components/Header/header';
-import useInterval from './hooks/useInterval';
-import MapView from './MapView';
 import usePosition from './hooks/usePosition';
+import MapView from './MapView';
 import euclidianDist from './utilities/euclidianDist';
 
 const MIN_DISTANCE_FOR_LOCATION_UPDATE = 0.1;
@@ -25,7 +24,7 @@ function App() {
 				setLocations(locations => [...locations, { lat: position.lat, lng: position.lng }]);
 			}
 		}
-	}, [position]);
+	}, [position, locations]);
 
 	return (
 		<div style={{ height: '100vh', width: '100vw' }}>
