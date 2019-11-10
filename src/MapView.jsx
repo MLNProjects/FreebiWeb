@@ -15,14 +15,14 @@ let DefaultIcon = L.icon({
 
 L.Marker.prototype.options.icon = DefaultIcon;
 
-const position = [59.35, 18.06];
+const fallbackPosition = [59.35, 18.06];
 
 const MapView = ({ locations }) => {
   console.log(locations);
   return (
     <Map
       zoomControl={false}
-      center={locations ? locations[0] : position}
+      center={locations ? locations[locations.length - 1] : fallbackPosition}
       zoom={13}
       style={{ width: "100%", height: "100%" }}
     >
