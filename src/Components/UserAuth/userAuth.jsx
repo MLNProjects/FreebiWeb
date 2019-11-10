@@ -9,12 +9,16 @@ const UserAuth = () => {
   if (!user.currentUser) {
     return (
       <div
-        onClick={() =>
+        onClick={() => {
           dispatch({
             type: "toggleLogin",
             login: { toggle: !login.toggle }
-          })
-        }
+          });
+          dispatch({
+            type: "toggleMenu",
+            menu: { toggle: false }
+          });
+        }}
         className="authStatus-wrapper"
       >
         <p>Login</p>

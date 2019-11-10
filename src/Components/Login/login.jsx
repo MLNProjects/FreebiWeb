@@ -1,12 +1,11 @@
 import "./login.css";
 import React, { useCallback } from "react";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import auth from "../../utilities/base";
 import { useStateValue } from "../../utilities/StateManagement/stateManagement";
 
-const Login = props => {
-  const [{ login, user }, dispatch] = useStateValue();
-
+const Login = () => {
+  const [{ login }, dispatch] = useStateValue();
   const handleLogin = useCallback(async event => {
     event.preventDefault();
     const { email, password } = event.target.elements;
@@ -44,7 +43,16 @@ const Login = props => {
             </label>
             <button type="submit">Log in</button>
           </form>
-          <Link className="link" to="/signup">
+          <Link
+            onClick={() =>
+              dispatch({
+                type: "toggleLogin",
+                login: { toggle: false }
+              })
+            }
+            className="link"
+            to="/signup"
+          >
             Click here to sign up!
           </Link>
         </div>

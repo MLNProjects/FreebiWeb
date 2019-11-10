@@ -7,12 +7,16 @@ const Nav = () => {
 
   return (
     <div
-      onClick={() =>
+      onClick={() => {
         dispatch({
           type: "toggleMenu",
           menu: { toggle: !menu.toggle }
-        })
-      }
+        });
+        dispatch({
+          type: "toggleLogin",
+          login: { toggle: false }
+        });
+      }}
       className={menu.toggle ? "change nav-wrapper" : "nav-wrapper"}
     >
       <div className="bar1"></div>

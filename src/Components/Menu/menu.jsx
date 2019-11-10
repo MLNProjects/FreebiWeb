@@ -1,7 +1,7 @@
 import React from "react";
 import "./menu.css";
 import { useStateValue } from "../../utilities/StateManagement/stateManagement";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Menu = () => {
   const [{ menu }, dispatch] = useStateValue();
