@@ -1,49 +1,36 @@
 import React from "react";
 import "./App.css";
+
+//Components
 import Header from "./Components/Header/header";
-import usePosition from "./hooks/usePosition";
-import MapView from "./MapView";
-import euclidianDist from "./utilities/euclidianDist";
+
+//Views
+import MapView from "./Views/MapView/MapView";
+import SignUp from "./Views/SignUp/signUp";
+
+//React router
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 //Imports to handle global states
 import { StateProvider } from "./utilities/StateManagement/stateManagement";
 import reducer from "./utilities/StateManagement/reducer";
 import initialState from "./utilities/StateManagement/initialState";
 
-const MIN_DISTANCE_FOR_LOCATION_UPDATE = 0.1;
-
 function App() {
-  const position = usePosition();
-
-  const [locations, setLocations] = React.useState([]);
-
-  React.useEffect(() => {
-    if (position.lat) {
-      if (
-        locations.length === 0 ||
-        euclidianDist(
-          [
-            locations[locations.length - 1].lat,
-            locations[locations.length - 1].lng
-          ],
-          [position.lat, position.lng]
-        ) > MIN_DISTANCE_FOR_LOCATION_UPDATE
-      ) {
-        setLocations(locations => [
-          ...locations,
-          { lat: position.lat, lng: position.lng }
-        ]);
-      }
-    }
-  }, [position, locations]);
-
   return (
-    <div style={{ height: "100vh", width: "100vw" }}>
-      <StateProvider initialState={initialState} reducer={reducer}>
-        <Header />
-        <MapView locations={locations}></MapView>
-      </StateProvider>
-    </div>
+    <StateProvider initialState={initialState} reducer={reducer}>
+      <Router>
+        <Switch>
+          <React.Fragment>
+            <div style={{ height: "100vh", width: "100vw" }}>
+              <Header />
+              <Route exact path="/" component={MapView} />
+              <Route exact path="/signup" component={SignUp} />
+            </div>
+          </React.Fragment>
+        </Switch>
+      </Router>
+    </StateProvider>
   );
 }
 
