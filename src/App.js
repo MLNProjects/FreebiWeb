@@ -4,6 +4,8 @@ import Header from "./Components/Header/header";
 import usePosition from "./hooks/usePosition";
 import MapView from "./MapView";
 import euclidianDist from "./utilities/euclidianDist";
+
+//Imports to handle global states
 import { StateProvider } from "./utilities/StateManagement/stateManagement";
 import reducer from "./utilities/StateManagement/reducer";
 import initialState from "./utilities/StateManagement/initialState";
