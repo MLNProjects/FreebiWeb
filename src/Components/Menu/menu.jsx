@@ -1,6 +1,7 @@
 import React from "react";
 import "./menu.css";
 import { useStateValue } from "../../utilities/StateManagement/stateManagement";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 
 const Menu = () => {
   const [{ menu }] = useStateValue();
@@ -8,10 +9,8 @@ const Menu = () => {
   return (
     <div className={menu.toggle ? "overlay active-nav" : "overlay"}>
       <div className="overlay-content">
-        <a href="./">Home</a>
-        <a href="./">Profile</a>
-        <a href="./">Freebee</a>
-        <a href="./">About us</a>
+        <Link to="/">Home</Link>
+        <Link to="/signup">Sign Up</Link>
       </div>
     </div>
   );
