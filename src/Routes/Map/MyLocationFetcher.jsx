@@ -21,7 +21,9 @@ const MyLocationFetcher = ({ children }) => {
 					[position.lat, position.lng]
 				) > MIN_DISTANCE_FOR_LOCATION_UPDATE
 			) {
-				pushLocation(user.currentUser, position);
+				if (user.currentUser) {
+					pushLocation(user.currentUser.uid, position);
+				}
 				setLocations(locations => [...locations, { lat: position.lat, lng: position.lng }]);
 			}
 		}

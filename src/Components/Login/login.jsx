@@ -1,12 +1,11 @@
 import './login.css';
 import React, { useCallback } from 'react';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import auth from '../../utilities/base';
 import { useStateValue } from '../../utilities/StateManagement/stateManagement';
 
-const Login = props => {
-	const [{ login, user }, dispatch] = useStateValue();
-	console.log(login.toggle);
+const Login = () => {
+	const [{ login }, dispatch] = useStateValue();
 	const handleLogin = useCallback(async event => {
 		event.preventDefault();
 		const { email, password } = event.target.elements;
@@ -14,14 +13,19 @@ const Login = props => {
 			await auth.auth().signInWithEmailAndPassword(email.value, password.value);
 			dispatch({
 				type: 'changeAuthState',
-				user: { currentUser: auth.auth().currentUser.uid },
+				user: { currentUser: auth.auth().currentUser },
 			});
+			dispatch({
+				type: 'toggleLogin',
+				login: { toggle: false },
+			});
+			console.log('User Authenticated');
 		} catch (error) {
 			window.alert('Username and or password not recognized :(');
+			console.log('Authentication failure');
 		}
 	}, []);
 
-	console.log(user);
 	return (
 		<div id="login-wrapper" className={login.toggle ? 'loginOverlay activeLogin' : 'loginOverlay'}>
 			<div className="loginOverlay-content">
@@ -36,7 +40,16 @@ const Login = props => {
 						</label>
 						<button type="submit">Log in</button>
 					</form>
-					<Link className="link" to="/signup">
+					<Link
+						onClick={() =>
+							dispatch({
+								type: 'toggleLogin',
+								login: { toggle: false },
+							})
+						}
+						className="link"
+						to="/signup"
+					>
 						Click here to sign up!
 					</Link>
 				</div>
