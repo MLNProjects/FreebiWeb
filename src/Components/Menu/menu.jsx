@@ -1,14 +1,17 @@
 import React from "react";
 import "./menu.css";
+import { useStateValue } from "../../utilities/StateManagement/stateManagement";
 
 const Menu = () => {
+  const [{ menu }] = useStateValue();
+
   return (
-    <div className="overlay">
+    <div className={menu.toggle ? "overlay active-nav" : "overlay"}>
       <div className="overlay-content">
-        <a>Home</a>
-        <a>Profile</a>
-        <a>Freebee</a>
-        <a>About us</a>
+        <a href="./">Home</a>
+        <a href="./">Profile</a>
+        <a href="./">Freebee</a>
+        <a href="./">About us</a>
       </div>
     </div>
   );

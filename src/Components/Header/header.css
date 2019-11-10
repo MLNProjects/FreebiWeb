@@ -7,7 +7,7 @@
   background: black;
   height: 70px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -15,4 +15,10 @@
   margin: 0;
   padding: 0;
   color: white;
+}
+
+.nav-wrapper,
+.authStatus-wrapper {
+  width: 10%;
+  padding: 0 30px;
 }
