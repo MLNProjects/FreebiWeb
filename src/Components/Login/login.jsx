@@ -16,12 +16,17 @@ const Login = props => {
         type: "changeAuthState",
         user: { currentUser: auth.auth().currentUser }
       });
+      dispatch({
+        type: "toggleLogin",
+        login: { toggle: false }
+      });
+      console.log("User Authenticated");
     } catch (error) {
       window.alert("Username and or password not recognized :(");
+      console.log("Authentication failure");
     }
   }, []);
 
-  console.log(user);
   return (
     <div
       id="login-wrapper"

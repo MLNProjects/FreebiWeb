@@ -7,7 +7,7 @@
   overflow-x: hidden;
   transition: 0.5s;
   width: 0;
-  z-index: 500;
+  z-index: 1001;
   top: 70px;
 }
 
