@@ -1,18 +1,18 @@
 import 'leaflet/dist/leaflet.css';
 import React from 'react';
 import usePosition from '../../hooks/usePosition';
-import euclidianDist from '../../utilities/euclidianDist';
+import haversineDist from '../../utilities/haversineDist';
 
 const MyLocationFetcher = ({ children }) => {
 	const position = usePosition();
-	const MIN_DISTANCE_FOR_LOCATION_UPDATE = 0.000001;
+	const MIN_DISTANCE_FOR_LOCATION_UPDATE = 1;
 	const [locations, setLocations] = React.useState([]);
 
 	React.useEffect(() => {
 		if (position.lat) {
 			if (locations.length > 0) {
 				console.log(
-					euclidianDist(
+					haversineDist(
 						[locations[locations.length - 1].lat, locations[locations.length - 1].lng],
 						[position.lat, position.lng]
 					),
@@ -21,7 +21,7 @@ const MyLocationFetcher = ({ children }) => {
 			}
 			if (
 				locations.length === 0 ||
-				euclidianDist(
+				haversineDist(
 					[locations[locations.length - 1].lat, locations[locations.length - 1].lng],
 					[position.lat, position.lng]
 				) > MIN_DISTANCE_FOR_LOCATION_UPDATE
