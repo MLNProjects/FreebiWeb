@@ -6,7 +6,7 @@ import { useStateValue } from "../../utilities/StateManagement/stateManagement";
 
 const Login = props => {
   const [{ login, user }, dispatch] = useStateValue();
-  console.log(login.toggle);
+
   const handleLogin = useCallback(async event => {
     event.preventDefault();
     const { email, password } = event.target.elements;
