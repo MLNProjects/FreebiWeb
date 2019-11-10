@@ -2,6 +2,7 @@ import React from "react";
 import Nav from "../Nav/nav";
 import UserAuth from "../UserAuth/userAuth";
 import Menu from "../Menu/menu";
+import Login from "../Login/login";
 
 import "./header.css";
 
@@ -14,6 +15,7 @@ const Header = () => {
         <UserAuth />
       </div>
       <Menu />
+      <Login />
     </div>
   );
 };
