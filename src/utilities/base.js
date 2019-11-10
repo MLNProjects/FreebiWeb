@@ -11,8 +11,6 @@ const auth = app.initializeApp({
   messagingSenderId: process.env.REACT_APP_FIREBASE_SENDER_ID
 });
 
-firebase.analytics();
-
 export const db = app.firestore();
 
 export default auth;
