@@ -3,10 +3,10 @@ import React from 'react';
 import usePosition from '../../hooks/usePosition';
 import haversineDist from '../../utilities/haversineDist';
 import pushLocation from './pushLocation';
-import { useStateValue } from '../../utilities/StateManagement/stateManagement';
+import { GlobalState } from '../../utilities/StateManagement/stateManagement';
 
 const MyLocationFetcher = ({ children }) => {
-	const [{ user }, dispatch] = useStateValue();
+	const [{ user }, dispatch] = React.useContext(GlobalState);
 	const position = usePosition();
 	const MIN_DISTANCE_FOR_LOCATION_UPDATE = 1;
 	const [locations, setLocations] = React.useState([]);
@@ -21,8 +21,8 @@ const MyLocationFetcher = ({ children }) => {
 					[position.lat, position.lng]
 				) > MIN_DISTANCE_FOR_LOCATION_UPDATE
 			) {
-				if (user.currentUser) {
-					pushLocation(user.currentUser.uid, position);
+				if (user.uid) {
+					pushLocation(user.uid, position);
 				}
 				setLocations(locations => [...locations, { lat: position.lat, lng: position.lng }]);
 			}

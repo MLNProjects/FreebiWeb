@@ -1,5 +1,4 @@
 import { db } from '../../utilities/base';
-import firebase from 'firebase';
 
 export default (myUserId, location) => {
 	console.log('push called with user id:' + myUserId);

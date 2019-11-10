@@ -2,10 +2,10 @@ import './login.css';
 import React, { useCallback } from 'react';
 import { Link } from 'react-router-dom';
 import auth from '../../utilities/base';
-import { useStateValue } from '../../utilities/StateManagement/stateManagement';
+import { GlobalState } from '../../utilities/StateManagement/stateManagement';
 
 const Login = () => {
-	const [{ login }, dispatch] = useStateValue();
+	const [{ login }, dispatch] = React.useContext(GlobalState);
 	const handleLogin = useCallback(async event => {
 		event.preventDefault();
 		const { email, password } = event.target.elements;
@@ -13,7 +13,7 @@ const Login = () => {
 			await auth.auth().signInWithEmailAndPassword(email.value, password.value);
 			dispatch({
 				type: 'changeAuthState',
-				user: { currentUser: auth.auth().currentUser },
+				user: { uid: auth.auth().currentUser.uid },
 			});
 			dispatch({
 				type: 'toggleLogin',
