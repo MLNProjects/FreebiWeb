@@ -1,11 +1,7 @@
 import 'leaflet/dist/leaflet.css';
 import React from 'react';
-import L from 'leaflet';
-import { Map, Marker, Popup, TileLayer, ZoomControl } from 'react-leaflet';
-import icon from 'leaflet/dist/images/marker-icon.png';
-import iconShadow from 'leaflet/dist/images/marker-shadow.png';
-import euclidianDist from '../../utilities/euclidianDist';
 import usePosition from '../../hooks/usePosition';
+import euclidianDist from '../../utilities/euclidianDist';
 
 const MyLocationFetcher = ({ children }) => {
 	const position = usePosition();
