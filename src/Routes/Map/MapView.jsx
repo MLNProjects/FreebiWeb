@@ -2,7 +2,7 @@ import 'leaflet/dist/leaflet.css';
 import React from 'react';
 import L from 'leaflet';
 import { Map, Marker, Popup, TileLayer, ZoomControl } from 'react-leaflet';
-import icon from 'leaflet/dist/images/marker-icon.png';
+import icon from './marker.png';
 import iconShadow from 'leaflet/dist/images/marker-shadow.png';
 import euclidianDist from '../../utilities/euclidianDist';
 import usePosition from '../../hooks/usePosition';
@@ -12,7 +12,7 @@ let iconImg = new Image(icon);
 let DefaultIcon = L.icon({
 	iconUrl: icon,
 	shadowUrl: iconShadow,
-	iconAnchor: [12, 41],
+	iconAnchor: [16, 16],
 });
 
 L.Marker.prototype.options.icon = DefaultIcon;
