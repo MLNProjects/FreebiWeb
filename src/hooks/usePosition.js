@@ -10,6 +10,7 @@ export default () => {
 		setPosition({
 			lat: coords.latitude,
 			lng: coords.longitude,
+			timestamp: new Date(),
 		});
 	};
 	const onError = error => {
