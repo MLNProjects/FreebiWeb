@@ -1,13 +1,19 @@
 import React from "react";
 import "./nav.css";
+import { useStateValue } from "../../utilities/StateManagement/stateManagement";
 
 const Nav = () => {
-  const [menuToggle, setMenuToggle] = React.useState(false);
+  const [{ menu }, dispatch] = useStateValue();
 
   return (
     <div
-      onClick={() => setMenuToggle(!menuToggle)}
-      className={menuToggle ? "change nav-wrapper" : "nav-wrapper"}
+      onClick={() =>
+        dispatch({
+          type: "toggleMenu",
+          menu: { toggle: !menu.toggle }
+        })
+      }
+      className={menu.toggle ? "change nav-wrapper" : "nav-wrapper"}
     >
       <div className="bar1"></div>
       <div className="bar2"></div>
