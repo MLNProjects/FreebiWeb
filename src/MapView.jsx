@@ -1,11 +1,9 @@
-import 'leaflet/dist/leaflet.css';
+import './Routes/MapView/node_modules/leaflet/dist/leaflet.css';
 import React from 'react';
 import L from 'leaflet';
 import { Map, Marker, Popup, TileLayer, ZoomControl } from 'react-leaflet';
 import icon from 'leaflet/dist/images/marker-icon.png';
 import iconShadow from 'leaflet/dist/images/marker-shadow.png';
-import euclidianDist from '../../utilities/euclidianDist';
-import usePosition from '../../hooks/usePosition';
 
 let iconImg = new Image(icon);
 
@@ -17,13 +15,14 @@ let DefaultIcon = L.icon({
 
 L.Marker.prototype.options.icon = DefaultIcon;
 
-const DEFAULT_CENTER = [59.35, 18.06];
+const fallbackPosition = [59.35, 18.06];
 
 const MapView = ({ locations }) => {
+	console.log(locations);
 	return (
 		<Map
 			zoomControl={false}
-			center={locations.length > 0 ? locations[locations.length - 1] : DEFAULT_CENTER}
+			center={locations.length > 0 ? locations[locations.length - 1] : fallbackPosition}
 			zoom={13}
 			style={{ width: '100%', height: '100%' }}
 		>

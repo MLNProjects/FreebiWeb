@@ -5,11 +5,20 @@ import euclidianDist from '../../utilities/euclidianDist';
 
 const MyLocationFetcher = ({ children }) => {
 	const position = usePosition();
-	const MIN_DISTANCE_FOR_LOCATION_UPDATE = 0.1;
+	const MIN_DISTANCE_FOR_LOCATION_UPDATE = 0.000001;
 	const [locations, setLocations] = React.useState([]);
 
 	React.useEffect(() => {
 		if (position.lat) {
+			if (locations.length > 0) {
+				console.log(
+					euclidianDist(
+						[locations[locations.length - 1].lat, locations[locations.length - 1].lng],
+						[position.lat, position.lng]
+					),
+					locations.length
+				);
+			}
 			if (
 				locations.length === 0 ||
 				euclidianDist(
