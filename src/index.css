@@ -1,21 +1,40 @@
 :root {
-  --primary-color: #E3BE3B;
-  --primary-dark-color: #9C7B06;
-  --primary-light-color: #FFE68E;
-  --secondary-color: #663099;
+  --background-color: rgb(27, 27, 25);
+  --background-secondary-color: rgba(119, 119, 105, 0.5);
+  --primary-color: rgb(241, 200, 53);
+  --primary-dark-color: rgb(34, 33, 36);
+  --primary-light-color: rgba(255, 231, 142, 0.746);
+  --secondary-color: #8f5cc0;
   --secondary-dark-color: #3B0C69;
   --secondary-light-color: #7B4AA9;
+  --warning-color: #f04a18;
+  --input-color: rgba(233, 233, 144, 0.5);
+  --text-color: rgb(243, 243, 229);
 }
 
+
+
 body {
+  background-color: var(--background-color);
   margin: 0;
   font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 400;
+  color: white;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
+input {
+  background: var(--input-color);
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  border: none;
+  min-width: 5rem;
+  font-weight: 500;
+}
+
 button {
+  padding: 0.5rem;
   font-size: 1.2rem;
   border: none;
   min-width: 5rem;
@@ -27,9 +46,12 @@ button {
 }
 
 .secondary {
-  background-color: var(--primary-color);
+  background: var(--secondary-color);
 }
 
+.warning {
+  background: var(--warning-color);
+}
 
 
 code {
