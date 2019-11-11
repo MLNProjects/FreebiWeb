@@ -1,8 +1,5 @@
 import React from 'react';
 
-//Components
-import Header from './Components/Header/Header';
-
 //Routes
 import Map from './Routes/Map/Map';
 import SignUp from './Routes/SignUp/SignUp';
@@ -22,8 +19,8 @@ function App() {
 			<Router>
 				<Switch>
 					<React.Fragment>
-						{/* <Header /> */}
 						<div>
+							{/* <Route exact path="/csstest" component={CSSTest}></Route> */}
 							<Route exact path="/" component={Map} />
 							<Route exact path="/signup" component={SignUp} />
 							<Route exact path="/login" component={Login} />
