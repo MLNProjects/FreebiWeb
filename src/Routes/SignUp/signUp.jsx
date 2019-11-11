@@ -1,5 +1,6 @@
 import React, { useCallback } from 'react';
 import auth from '../../utilities/base';
+import './SignUp.css';
 
 const SignUp = () => {
 	const handleSignUp = useCallback(async event => {
