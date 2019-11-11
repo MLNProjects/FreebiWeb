@@ -1,6 +1,7 @@
 import React, { useCallback } from "react";
 import auth from "../../utilities/base";
 import FormInput from "../../Components/FormInput";
+import "./SignUp.css";
 
 const SignUp = () => {
   const handleSignUp = useCallback(async event => {
@@ -17,17 +18,16 @@ const SignUp = () => {
   }, []);
 
   return (
-    <div
-      style={{ margin: "auto", width: "90%", height: "50vh", marginTop: "30%" }}
-    >
-      <h1>SIGN UP</h1>
+    <div id="sign-up-wrapper">
+      <form onSubmit={handleSignUp} id="sign-up-form">
+        <h1>SIGN UP</h1>
 
-      <form onSubmit={handleSignUp}>
         <FormInput label="EMAIL" name="email" type="email" />
         <FormInput label="PASSWORD" name="password" type="password" />
-        <div style={{ margin: "2rem" }}>
-          <button className="primary">SIGN UP</button>
-        </div>
+
+        <button id="sign-up-button" className="primary">
+          SIGN UP
+        </button>
       </form>
     </div>
   );

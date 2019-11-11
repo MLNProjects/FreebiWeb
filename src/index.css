@@ -23,20 +23,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-form {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
 
-}
 
-.input-label {
-  font-size: 1.2rem;
-  font-weight: 500;
-  margin-bottom: 0.1rem;
-
-}
 
 input {
   background: var(--text-color);
