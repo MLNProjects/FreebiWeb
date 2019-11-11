@@ -13,6 +13,7 @@ const CSSTest = ({}) => {
       <button className="primary">PRIMARY</button>
       <button className="secondary">SECONDARY</button>
       <button className="warning">WARNING</button>
+      <input></input>
     </div>
   );
 };

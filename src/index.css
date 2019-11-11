@@ -1,10 +1,10 @@
 :root {
-  --primary-color: "#E3BE3B";
-  --primary-dark-color: "#9C7B06";
-  --primary-light-color: "#FFE68E";
-  --secondary-color: "#663099";
-  --secondary-dark-color: "#3B0C69";
-  --secondary-light-color: "#7B4AA9";
+  --primary-color: #E3BE3B;
+  --primary-dark-color: #9C7B06;
+  --primary-light-color: #FFE68E;
+  --secondary-color: #663099;
+  --secondary-dark-color: #3B0C69;
+  --secondary-light-color: #7B4AA9;
 }
 
 body {
@@ -22,7 +22,7 @@ button {
   font-weight: 500;
 }
 
-button .primary {
+.primary {
   background: var(--primary-color);
 }
 
