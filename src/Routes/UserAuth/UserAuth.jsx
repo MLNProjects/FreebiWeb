@@ -1,5 +1,5 @@
 import React from 'react';
-import './userAuth.css';
+import './UserAuth.css';
 import { GlobalState } from '../../utilities/StateManagement/stateManagement';
 import auth from '../../utilities/base';
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import './menu.css';
+import './Menu.css';
 import { GlobalState } from '../../utilities/StateManagement/stateManagement';
 import { Link } from 'react-router-dom';
 

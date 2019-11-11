@@ -1,11 +1,12 @@
 import React from 'react';
 
 //Components
-import Header from './Components/Header/header';
+import Header from './Components/Header/Header';
 
 //Routes
 import Map from './Routes/Map/Map';
-import SignUp from './Routes/SignUp/signUp';
+import SignUp from './Routes/SignUp/SignUp';
+import Login from './Routes/Login/Login';
 
 //React router
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
@@ -21,10 +22,11 @@ function App() {
 			<Router>
 				<Switch>
 					<React.Fragment>
-						<Header />
+						{/* <Header /> */}
 						<div>
 							<Route exact path="/" component={Map} />
 							<Route exact path="/signup" component={SignUp} />
+							<Route exact path="/login" component={Login} />
 						</div>
 					</React.Fragment>
 				</Switch>

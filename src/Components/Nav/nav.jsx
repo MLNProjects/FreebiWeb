@@ -1,5 +1,5 @@
 import React from 'react';
-import './nav.css';
+import './Nav.css';
 import { GlobalState } from '../../utilities/StateManagement/stateManagement';
 
 const Nav = () => {
