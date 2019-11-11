@@ -1,3 +1,12 @@
+:root {
+  --primary-color: "#E3BE3B";
+  --primary-dark-color: "#9C7B06";
+  --primary-light-color: "#FFE68E";
+  --secondary-color: "#663099";
+  --secondary-dark-color: "#3B0C69";
+  --secondary-light-color: "#7B4AA9";
+}
+
 body {
   margin: 0;
   font-family: 'IBM Plex Sans', sans-serif;
@@ -5,6 +14,23 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+button {
+  font-size: 1.2rem;
+  border: none;
+  min-width: 5rem;
+  font-weight: 500;
+}
+
+button .primary {
+  background: var(--primary-color);
+}
+
+.secondary {
+  background-color: var(--primary-color);
+}
+
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
