@@ -6,6 +6,7 @@ import icon from "./marker.png";
 import iconShadow from "leaflet/dist/images/marker-shadow.png";
 import euclidianDist from "../../utilities/euclidianDist";
 import usePosition from "../../hooks/usePosition";
+import vectorStyles from "../../style.js";
 
 let iconImg = new Image(icon);
 
@@ -18,10 +19,11 @@ let DefaultIcon = L.icon({
 L.Marker.prototype.options.icon = DefaultIcon;
 
 const DEFAULT_CENTER = [59.35, 18.06];
-
+//https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
 const MapView = ({ locations }) => {
   return (
     <Map
+      style={vectorStyles}
       zoomControl={false}
       center={
         locations.length > 0 ? locations[locations.length - 1] : DEFAULT_CENTER
@@ -31,7 +33,7 @@ const MapView = ({ locations }) => {
     >
       <ZoomControl position="bottomright" />
       <TileLayer
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
         attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
       />
       {locations.map((l, i) => {
