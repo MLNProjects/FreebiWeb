@@ -1,6 +1,7 @@
 #sign-up-wrapper {
-  height: 100%;
-  width: 100%;
+  top: 50%;
+  -ms-transform: translateY(50%);
+  transform: translateY(50%);
 }
 
 #sign-up-form {
@@ -8,15 +9,27 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  padding: 0px 30px;
+  width: fit-content;
 }
 
 #input-label {
   font-size: 1.2rem;
-  font-weight: 500;
+  font-weight: 800;
   margin-bottom: 0.1rem;
+  color: var(--primary-color);
 }
 
 #sign-up-button {
-  margin: 2rem;
+  margin: 2rem 0;
+  width: 8rem;
+}
+
+#primary-text {
+  margin: 0;
+}
+
+#sub-text {
+  margin: 0;
+  margin-bottom: 20px;
 }

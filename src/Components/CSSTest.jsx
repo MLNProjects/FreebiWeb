@@ -10,7 +10,7 @@ const CSSTest = ({}) => {
       <p>
         This word is <em>emphasized</em>
       </p>
-      <button className="primary">PRIMARY</button>
+      <button className="primary">primary</button>
       <button className="secondary">SECONDARY</button>
       <button className="warning">WARNING</button>
       <input></input>

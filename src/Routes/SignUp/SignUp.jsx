@@ -20,13 +20,16 @@ const SignUp = () => {
   return (
     <div id="sign-up-wrapper">
       <form onSubmit={handleSignUp} id="sign-up-form">
-        <h1>SIGN UP</h1>
+        <h1 id="primary-text">Sign up</h1>
+        <h4 id="sub-text">
+          Help find the lost, join <em>pararescue</em>.
+        </h4>
 
-        <FormInput label="EMAIL" name="email" type="email" />
-        <FormInput label="PASSWORD" name="password" type="password" />
+        <FormInput label="email" name="email" type="email" />
+        <FormInput label="password" name="password" type="password" />
 
         <button id="sign-up-button" className="primary">
-          SIGN UP
+          Sign up
         </button>
       </form>
     </div>
