@@ -18,17 +18,17 @@ const SignUp = () => {
   }, []);
 
   return (
-    <div id="sign-up-wrapper">
-      <form onSubmit={handleSignUp} id="sign-up-form">
-        <h1 id="primary-text">Sign up</h1>
-        <h4 id="sub-text">
-          Help find the lost, join <em>pararescue</em>.
+    <div id="sign-form-wrapper">
+      <form onSubmit={handleSignUp} id="sign-form">
+        <h1 id="form-header">Sign up</h1>
+        <h4 id="form-sub-text">
+          Help find the <em>lost</em>.
         </h4>
 
         <FormInput label="email" name="email" type="email" />
         <FormInput label="password" name="password" type="password" />
 
-        <button id="sign-up-button" className="primary">
+        <button id="form-button" className="primary">
           Sign up
         </button>
       </form>

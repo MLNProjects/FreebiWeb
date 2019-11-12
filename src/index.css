@@ -25,7 +25,7 @@ input {
   background: var(--text-color);
   color: var(--background-color);
   padding: 0.5rem;
-  font-size: 1.2rem;
+  font-size: 0.9rem;
   border: none;
   min-width: 5rem;
   font-weight: 500;
@@ -73,4 +73,41 @@ button:hover {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+/* Form css */
+#sign-form-wrapper {
+  top: 50%;
+  -ms-transform: translateY(50%);
+  transform: translateY(50%);
+}
+
+#sign-form {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 0px 30px;
+  width: fit-content;
+}
+
+#form-input-label {
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin-bottom: 0.1rem;
+  color: var(--primary-color);
+}
+
+#form-button {
+  margin: 2rem 0;
+  width: 8rem;
+}
+
+#form-header {
+  margin: 0;
+}
+
+#form-sub-text {
+  margin: 0;
+  margin-bottom: 20px;
 }
