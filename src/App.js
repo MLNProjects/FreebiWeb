@@ -23,10 +23,10 @@ function App() {
           <React.Fragment>
             <div>
               <Route exact path="/csstest" component={CSSTest}></Route>
-              <Route exact path="/" component={Map} />
+              <Route exact path="/map" component={Map} />
               <Route exact path="/signup" component={SignUp} />
-              <Route exact path="/login" component={Login} />
-              <Route exact path="/home" component={Home} />
+              <Route exact path="/signin" component={Login} />
+              <Route exact path="/" component={Home} />
             </div>
           </React.Fragment>
         </Switch>

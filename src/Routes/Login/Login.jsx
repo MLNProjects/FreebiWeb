@@ -4,8 +4,10 @@ import { Link } from "react-router-dom";
 import auth from "../../utilities/base";
 import { GlobalState } from "../../utilities/StateManagement/stateManagement";
 import FormInput from "../../Components/FormInput";
+import { useHistory } from "react-router-dom";
 
 const Login = () => {
+  const history = useHistory();
   const [{ login }, dispatch] = React.useContext(GlobalState);
   const handleLogin = useCallback(async event => {
     event.preventDefault();
@@ -20,6 +22,8 @@ const Login = () => {
         type: "toggleLogin",
         login: { toggle: false }
       });
+      history.push("/map");
+
       console.log("User Authenticated");
     } catch (error) {
       window.alert("Username and or password not recognized :(");
