@@ -30,6 +30,8 @@ input {
   min-width: 5rem;
   font-weight: 500;
   border-radius: 2px;
+  width: 15rem;
+  max-width: 15rem;
 }
 
 input:focus {
@@ -89,8 +91,8 @@ code {
   width: fit-content;
   position: relative;
   top: 50%;
-  -ms-transform: translateY(-60%);
-  transform: translateY(-60%);
+  -ms-transform: translateY(-65%);
+  transform: translateY(-65%);
 }
 
 #form-input-label {
