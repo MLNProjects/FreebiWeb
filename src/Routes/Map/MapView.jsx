@@ -6,7 +6,6 @@ import icon from "./marker.png";
 import iconShadow from "leaflet/dist/images/marker-shadow.png";
 import euclidianDist from "../../utilities/euclidianDist";
 import usePosition from "../../hooks/usePosition";
-import vectorStyles from "../../style.js";
 
 let iconImg = new Image(icon);
 
