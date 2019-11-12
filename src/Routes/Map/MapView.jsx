@@ -22,7 +22,6 @@ const DEFAULT_CENTER = [59.35, 18.06];
 const MapView = ({ locations }) => {
   return (
     <Map
-      style={vectorStyles}
       zoomControl={false}
       center={
         locations.length > 0 ? locations[locations.length - 1] : DEFAULT_CENTER
