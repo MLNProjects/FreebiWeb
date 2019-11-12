@@ -103,7 +103,7 @@ code {
 }
 
 #form-button {
-  margin: 2rem 0;
+  margin: 2rem 0 1rem 0;
   width: 8rem;
 }
 
@@ -114,4 +114,19 @@ code {
 #form-sub-text {
   margin: 0;
   margin-bottom: 20px;
+}
+
+#form-link {
+  font-weight: 800;
+  font-style: inherit;
+  text-decoration: none;
+  color: var(--secondary-color);
+  padding: 0;
+  font-weight: 500;
+  margin-top: 0;
+}
+
+#form-link:hover {
+  filter: brightness(85%);
+  cursor: pointer;
 }

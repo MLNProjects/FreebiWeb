@@ -1,6 +1,7 @@
 import React, { useCallback } from "react";
 import auth from "../../utilities/base";
 import FormInput from "../../Components/FormInput";
+import { Link } from "react-router-dom";
 import "./SignUp.css";
 
 const SignUp = () => {
@@ -31,6 +32,9 @@ const SignUp = () => {
         <button id="form-button" className="primary">
           Sign up
         </button>
+        <Link id="form-link" to="/login">
+          Already have an account? Sign in!
+        </Link>
       </form>
     </div>
   );

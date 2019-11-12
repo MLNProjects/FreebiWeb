@@ -41,6 +41,9 @@ const Login = () => {
         <button id="form-button" className="primary">
           Sign in
         </button>
+        <Link id="form-link" to="/signup">
+          No account, click here to sign up!
+        </Link>
       </form>
     </div>
   );
