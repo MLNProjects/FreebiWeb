@@ -5,9 +5,7 @@ import { naiveAveraging } from './naiveAveraging';
 const SmoothingTestBed = ({}) => {
 	const smoothPath = naiveAveraging(malmoPath);
 
-	console.log({ smoothPath });
-
-	return <MapView locations={malmoPath} myLocations={smoothPath}></MapView>;
+	return <MapView myLocations={malmoPath} path={smoothPath.map(p => [p.lat, p.lng])}></MapView>;
 };
 
 export default SmoothingTestBed;
