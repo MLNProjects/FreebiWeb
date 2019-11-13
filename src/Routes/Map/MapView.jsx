@@ -40,9 +40,8 @@ const MapView = ({ myLocations, locations, path }) => {
 					return (
 						<Marker icon={myLocationIcon} position={l} key={i}>
 							<Popup>
-								{l.toString()}
+								{l.speed}
 								<br />
-								{new Date(l.timestamp)}
 							</Popup>
 						</Marker>
 					);
@@ -52,9 +51,8 @@ const MapView = ({ myLocations, locations, path }) => {
 					return (
 						<Marker icon={otherLocationsIcon} position={l} key={i}>
 							<Popup>
-								{l.toString()}
+								{l.speed}
 								<br />
-								{new Date(l.timestamp)}
 							</Popup>
 						</Marker>
 					);

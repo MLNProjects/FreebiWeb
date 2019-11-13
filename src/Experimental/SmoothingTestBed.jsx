@@ -2,10 +2,12 @@ import React from 'react';
 import MapView from '../Routes/Map/MapView';
 import { malmoPath } from './testPath';
 import { naiveAveraging } from './naiveAveraging';
+import { withSpeed, pruneFastPoints } from './speed';
 const SmoothingTestBed = ({}) => {
-	const smoothPath = naiveAveraging(malmoPath);
+	let malmoPathWithSpeed = withSpeed(malmoPath);
+	let smoothPath = pruneFastPoints(malmoPath, 6);
 
-	return <MapView myLocations={malmoPath} path={smoothPath.map(p => [p.lat, p.lng])}></MapView>;
+	return <MapView myLocations={malmoPathWithSpeed} path={smoothPath.map(p => [p.lat, p.lng])}></MapView>;
 };
 
 export default SmoothingTestBed;

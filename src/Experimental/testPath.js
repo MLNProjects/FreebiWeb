@@ -6,6 +6,7 @@ export const malmoPath = [
 			seconds: 1573657662,
 			nanoseconds: 483000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5984068,
@@ -14,6 +15,7 @@ export const malmoPath = [
 			seconds: 1573657662,
 			nanoseconds: 522000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5984088,
@@ -22,6 +24,7 @@ export const malmoPath = [
 			seconds: 1573657665,
 			nanoseconds: 556000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5984014,
@@ -30,6 +33,7 @@ export const malmoPath = [
 			seconds: 1573657673,
 			nanoseconds: 109000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5983976,
@@ -38,6 +42,7 @@ export const malmoPath = [
 			seconds: 1573657678,
 			nanoseconds: 534000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5984069,
@@ -46,6 +51,7 @@ export const malmoPath = [
 			seconds: 1573657682,
 			nanoseconds: 963000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5984005,
@@ -54,6 +60,7 @@ export const malmoPath = [
 			seconds: 1573657687,
 			nanoseconds: 964000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5984018,
@@ -62,6 +69,7 @@ export const malmoPath = [
 			seconds: 1573657692,
 			nanoseconds: 956000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5984008,
@@ -70,6 +78,7 @@ export const malmoPath = [
 			seconds: 1573657703,
 			nanoseconds: 133000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5984012,
@@ -78,6 +87,7 @@ export const malmoPath = [
 			seconds: 1573657714,
 			nanoseconds: 61000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5984025,
@@ -86,6 +96,7 @@ export const malmoPath = [
 			seconds: 1573657719,
 			nanoseconds: 403000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5996833,
@@ -94,6 +105,7 @@ export const malmoPath = [
 			seconds: 1573658888,
 			nanoseconds: 129000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5986553,
@@ -102,6 +114,7 @@ export const malmoPath = [
 			seconds: 1573658890,
 			nanoseconds: 899000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5986544,
@@ -110,6 +123,7 @@ export const malmoPath = [
 			seconds: 1573658910,
 			nanoseconds: 629000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5986549,
@@ -118,6 +132,7 @@ export const malmoPath = [
 			seconds: 1573658954,
 			nanoseconds: 106000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5986529,
@@ -126,6 +141,7 @@ export const malmoPath = [
 			seconds: 1573658954,
 			nanoseconds: 170000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5986539,
@@ -134,6 +150,7 @@ export const malmoPath = [
 			seconds: 1573658960,
 			nanoseconds: 981000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5986578,
@@ -142,6 +159,7 @@ export const malmoPath = [
 			seconds: 1573658967,
 			nanoseconds: 515000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5986593,
@@ -150,6 +168,7 @@ export const malmoPath = [
 			seconds: 1573658971,
 			nanoseconds: 34000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5984987,
@@ -158,6 +177,7 @@ export const malmoPath = [
 			seconds: 1573659452,
 			nanoseconds: 889000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5984766,
@@ -166,6 +186,7 @@ export const malmoPath = [
 			seconds: 1573659461,
 			nanoseconds: 541000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5984889,
@@ -174,6 +195,7 @@ export const malmoPath = [
 			seconds: 1573659483,
 			nanoseconds: 106000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5984907,
@@ -182,6 +204,7 @@ export const malmoPath = [
 			seconds: 1573659488,
 			nanoseconds: 20000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5984943,
@@ -190,6 +213,7 @@ export const malmoPath = [
 			seconds: 1573659493,
 			nanoseconds: 102000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5985042,
@@ -198,6 +222,7 @@ export const malmoPath = [
 			seconds: 1573659498,
 			nanoseconds: 240000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5984993,
@@ -206,6 +231,7 @@ export const malmoPath = [
 			seconds: 1573659503,
 			nanoseconds: 192000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5984855,
@@ -214,6 +240,7 @@ export const malmoPath = [
 			seconds: 1573659509,
 			nanoseconds: 862000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5984654,
@@ -222,6 +249,7 @@ export const malmoPath = [
 			seconds: 1573659514,
 			nanoseconds: 975000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.598558,
@@ -230,6 +258,7 @@ export const malmoPath = [
 			seconds: 1573659519,
 			nanoseconds: 797000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5985738,
@@ -238,6 +267,7 @@ export const malmoPath = [
 			seconds: 1573659524,
 			nanoseconds: 830000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5985136,
@@ -246,6 +276,7 @@ export const malmoPath = [
 			seconds: 1573659529,
 			nanoseconds: 872000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5984481,
@@ -254,6 +285,7 @@ export const malmoPath = [
 			seconds: 1573659535,
 			nanoseconds: 80000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5984749,
@@ -262,6 +294,7 @@ export const malmoPath = [
 			seconds: 1573659539,
 			nanoseconds: 954000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5984167,
@@ -270,6 +303,7 @@ export const malmoPath = [
 			seconds: 1573659544,
 			nanoseconds: 959000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5982863,
@@ -278,6 +312,7 @@ export const malmoPath = [
 			seconds: 1573659549,
 			nanoseconds: 990000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5981806,
@@ -286,6 +321,7 @@ export const malmoPath = [
 			seconds: 1573659555,
 			nanoseconds: 96000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5981103,
@@ -294,6 +330,7 @@ export const malmoPath = [
 			seconds: 1573659560,
 			nanoseconds: 76000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5980288,
@@ -302,6 +339,7 @@ export const malmoPath = [
 			seconds: 1573659565,
 			nanoseconds: 42000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5979304,
@@ -310,6 +348,7 @@ export const malmoPath = [
 			seconds: 1573659570,
 			nanoseconds: 70000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5977599,
@@ -318,6 +357,7 @@ export const malmoPath = [
 			seconds: 1573659575,
 			nanoseconds: 114000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5976877,
@@ -326,6 +366,7 @@ export const malmoPath = [
 			seconds: 1573659580,
 			nanoseconds: 140000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5976251,
@@ -334,6 +375,7 @@ export const malmoPath = [
 			seconds: 1573659585,
 			nanoseconds: 252000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5975727,
@@ -342,6 +384,7 @@ export const malmoPath = [
 			seconds: 1573659590,
 			nanoseconds: 137000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5975564,
@@ -350,6 +393,7 @@ export const malmoPath = [
 			seconds: 1573659595,
 			nanoseconds: 170000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5974518,
@@ -358,6 +402,7 @@ export const malmoPath = [
 			seconds: 1573659600,
 			nanoseconds: 111000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5973833,
@@ -366,6 +411,7 @@ export const malmoPath = [
 			seconds: 1573659605,
 			nanoseconds: 309000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.597362,
@@ -374,6 +420,7 @@ export const malmoPath = [
 			seconds: 1573659610,
 			nanoseconds: 265000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5973248,
@@ -382,6 +429,7 @@ export const malmoPath = [
 			seconds: 1573659615,
 			nanoseconds: 214000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5974416,
@@ -390,6 +438,7 @@ export const malmoPath = [
 			seconds: 1573659620,
 			nanoseconds: 249000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5974738,
@@ -398,6 +447,7 @@ export const malmoPath = [
 			seconds: 1573659625,
 			nanoseconds: 309000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.597486,
@@ -406,6 +456,7 @@ export const malmoPath = [
 			seconds: 1573659630,
 			nanoseconds: 296000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5975222,
@@ -414,6 +465,7 @@ export const malmoPath = [
 			seconds: 1573659635,
 			nanoseconds: 201000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5976861,
@@ -422,6 +474,7 @@ export const malmoPath = [
 			seconds: 1573659640,
 			nanoseconds: 286000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5977556,
@@ -430,6 +483,7 @@ export const malmoPath = [
 			seconds: 1573659645,
 			nanoseconds: 279000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5977686,
@@ -438,6 +492,7 @@ export const malmoPath = [
 			seconds: 1573659650,
 			nanoseconds: 453000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5978457,
@@ -446,6 +501,7 @@ export const malmoPath = [
 			seconds: 1573659655,
 			nanoseconds: 291000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5978467,
@@ -454,6 +510,7 @@ export const malmoPath = [
 			seconds: 1573659660,
 			nanoseconds: 350000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5977818,
@@ -462,6 +519,7 @@ export const malmoPath = [
 			seconds: 1573659665,
 			nanoseconds: 307000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5976201,
@@ -470,6 +528,7 @@ export const malmoPath = [
 			seconds: 1573659670,
 			nanoseconds: 472000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.597526,
@@ -478,6 +537,7 @@ export const malmoPath = [
 			seconds: 1573659675,
 			nanoseconds: 443000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5974671,
@@ -486,6 +546,7 @@ export const malmoPath = [
 			seconds: 1573659680,
 			nanoseconds: 403000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.597418,
@@ -494,6 +555,7 @@ export const malmoPath = [
 			seconds: 1573659685,
 			nanoseconds: 390000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5973461,
@@ -502,6 +564,7 @@ export const malmoPath = [
 			seconds: 1573659690,
 			nanoseconds: 489000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5973144,
@@ -510,6 +573,7 @@ export const malmoPath = [
 			seconds: 1573659695,
 			nanoseconds: 563000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5971981,
@@ -518,6 +582,7 @@ export const malmoPath = [
 			seconds: 1573659700,
 			nanoseconds: 442000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5971021,
@@ -526,6 +591,7 @@ export const malmoPath = [
 			seconds: 1573659705,
 			nanoseconds: 466000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5969436,
@@ -534,6 +600,7 @@ export const malmoPath = [
 			seconds: 1573659710,
 			nanoseconds: 484000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5968671,
@@ -542,6 +609,7 @@ export const malmoPath = [
 			seconds: 1573659715,
 			nanoseconds: 622000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5968133,
@@ -550,6 +618,7 @@ export const malmoPath = [
 			seconds: 1573659720,
 			nanoseconds: 667000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5967797,
@@ -558,6 +627,7 @@ export const malmoPath = [
 			seconds: 1573659725,
 			nanoseconds: 558000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5967781,
@@ -566,6 +636,7 @@ export const malmoPath = [
 			seconds: 1573659730,
 			nanoseconds: 577000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5967297,
@@ -574,6 +645,7 @@ export const malmoPath = [
 			seconds: 1573659735,
 			nanoseconds: 620000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5966267,
@@ -582,6 +654,7 @@ export const malmoPath = [
 			seconds: 1573659740,
 			nanoseconds: 696000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5965374,
@@ -590,6 +663,7 @@ export const malmoPath = [
 			seconds: 1573659745,
 			nanoseconds: 619000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5965116,
@@ -598,6 +672,7 @@ export const malmoPath = [
 			seconds: 1573659750,
 			nanoseconds: 701000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5963923,
@@ -606,6 +681,7 @@ export const malmoPath = [
 			seconds: 1573659755,
 			nanoseconds: 647000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5963161,
@@ -614,6 +690,7 @@ export const malmoPath = [
 			seconds: 1573659760,
 			nanoseconds: 804000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5957867,
@@ -622,6 +699,7 @@ export const malmoPath = [
 			seconds: 1573659804,
 			nanoseconds: 444000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5955771,
@@ -630,6 +708,7 @@ export const malmoPath = [
 			seconds: 1573659809,
 			nanoseconds: 614000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5957133,
@@ -638,6 +717,7 @@ export const malmoPath = [
 			seconds: 1573659814,
 			nanoseconds: 681000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5957511,
@@ -646,6 +726,7 @@ export const malmoPath = [
 			seconds: 1573659819,
 			nanoseconds: 605000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5957395,
@@ -654,6 +735,7 @@ export const malmoPath = [
 			seconds: 1573659824,
 			nanoseconds: 619000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5957187,
@@ -662,6 +744,7 @@ export const malmoPath = [
 			seconds: 1573659829,
 			nanoseconds: 687000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.595694,
@@ -670,6 +753,7 @@ export const malmoPath = [
 			seconds: 1573659834,
 			nanoseconds: 771000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5956673,
@@ -678,6 +762,7 @@ export const malmoPath = [
 			seconds: 1573659839,
 			nanoseconds: 621000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5957504,
@@ -686,6 +771,7 @@ export const malmoPath = [
 			seconds: 1573660258,
 			nanoseconds: 558000000,
 		},
+		speed: null,
 	},
 	{
 		lat: 55.5976737,
