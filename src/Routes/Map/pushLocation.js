@@ -10,7 +10,7 @@ export default (myUserId, location) => {
       .add({
         coordinates: geoPoint,
         timestamp: location.timestamp,
-        user_id: myUserId
+        user_id: myUserId,
       })
       .then(() => console.log("document written"))
       .catch(err => console.log(err));

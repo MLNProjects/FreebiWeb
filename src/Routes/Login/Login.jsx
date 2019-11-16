@@ -13,14 +13,16 @@ const Login = () => {
     event.preventDefault();
     const { email, password } = event.target.elements;
     try {
-      await auth.auth().signInWithEmailAndPassword(email.value, password.value);
+      await auth
+        .auth()
+        .signInWithEmailAndPassword(email.value, password.value);
       dispatch({
         type: "changeAuthState",
-        user: { uid: auth.auth().currentUser.uid }
+        user: { uid: auth.auth().currentUser.uid },
       });
       dispatch({
         type: "toggleLogin",
-        login: { toggle: false }
+        login: { toggle: false },
       });
       history.push("/map");
 

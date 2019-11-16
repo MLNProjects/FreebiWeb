@@ -3,17 +3,17 @@ const reducer = (state, action) => {
     case "toggleMenu":
       return {
         ...state,
-        menu: action.menu
+        menu: action.menu,
       };
     case "toggleLogin":
       return {
         ...state,
-        login: action.login
+        login: action.login,
       };
     case "changeAuthState":
       return {
         ...state,
-        user: action.user
+        user: action.user,
       };
     default:
       return state;

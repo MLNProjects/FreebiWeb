@@ -21,9 +21,9 @@ const MyLocationFetcher = ({ children }) => {
         haversineDist(
           [
             myLocations[myLocations.length - 1].lat,
-            myLocations[myLocations.length - 1].lng
+            myLocations[myLocations.length - 1].lng,
           ],
-          [position.lat, position.lng]
+          [position.lat, position.lng],
         ) > MIN_DISTANCE_FOR_LOCATION_UPDATE
       ) {
         if (user.uid) {
@@ -31,7 +31,7 @@ const MyLocationFetcher = ({ children }) => {
         }
         setMyLocations(myLocations => [
           ...myLocations,
-          { lat: position.lat, lng: position.lng }
+          { lat: position.lat, lng: position.lng },
         ]);
       }
     }
@@ -40,8 +40,8 @@ const MyLocationFetcher = ({ children }) => {
   return React.Children.map(children, child =>
     React.cloneElement(child, {
       myLocations: myLocations,
-      locations: locations
-    })
+      locations: locations,
+    }),
   );
 };
 
