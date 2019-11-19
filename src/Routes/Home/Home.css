@@ -28,7 +28,8 @@
   background: #e3be3b;
 }
 .title-text-wrapper {
-  width: 90%;
+  width: fit-content;
+  margin: auto;
 }
 
 .title {
