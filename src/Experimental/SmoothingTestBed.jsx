@@ -4,13 +4,8 @@ import { malmoPath } from "./testPath";
 import { naiveAveraging } from "./naiveAveraging";
 import { withSpeed, pruneFastPoints } from "./speed";
 const SmoothingTestBed = ({}) => {
-<<<<<<< HEAD
-	let malmoPathWithSpeed = withSpeed(malmoPath);
-	let smoothPath = pruneFastPoints(malmoPath, 10);
-=======
   let malmoPathWithSpeed = withSpeed(malmoPath);
-  let smoothPath = pruneFastPoints(malmoPath, 6);
->>>>>>> 80a13d035fe10ae21d55f86849a297e7cb0762e4
+  let smoothPath = pruneFastPoints(malmoPath, 10);
 
   return (
     <MapView
