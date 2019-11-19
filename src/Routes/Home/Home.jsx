@@ -1,6 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Home.css";
+import auth from "../../utilities/base";
+
+const signOut = () => {
+  auth.auth().signOut();
+};
 
 const Home = () => {
   return (
@@ -17,6 +22,7 @@ const Home = () => {
         </div>
       </div>
       <div className="link-wrapper">
+        <a onClick={signOut}>Logout</a>
         <Link to="/signin">signin</Link>
         <Link to="/signup">signup</Link>
       </div>
