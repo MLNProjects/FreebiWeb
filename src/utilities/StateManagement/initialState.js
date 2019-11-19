@@ -1,7 +1,7 @@
 const initialState = {
-	menu: { toggle: false },
-	login: { toggle: false },
-	user: { uid: null },
+  menu: { toggle: false },
+  login: { toggle: true },
+  user: { uid: null },
 };
 
 export default initialState;

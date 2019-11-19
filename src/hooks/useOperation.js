@@ -1,5 +1,6 @@
 import * as React from "react";
 import { db } from "../utilities/base";
+
 export function useOperation(id) {
   const [error, setError] = React.useState(false);
   const [loading, setLoading] = React.useState(true);
@@ -13,9 +14,11 @@ export function useOperation(id) {
         snapshot.forEach(doc => {
           let newDoc = doc.data();
           let newLocation = {
-            lat: newDoc.coordinates.latitude || newDoc.coordinates.lat,
-            lng: newDoc.coordinates.longitude || newDoc.coordinates.lng,
-            timestamp: newDoc.timestamp
+            lat:
+              newDoc.coordinates.latitude || newDoc.coordinates.lat,
+            lng:
+              newDoc.coordinates.longitude || newDoc.coordinates.lng,
+            timestamp: newDoc.timestamp,
           };
           newLocations.push(newLocation);
         });
@@ -25,7 +28,7 @@ export function useOperation(id) {
       err => {
         console.log(err);
         setError(err);
-      }
+      },
     );
 
     return () => unsubscribe();
@@ -34,7 +37,7 @@ export function useOperation(id) {
   return {
     error,
     loading,
-    locations
+    locations,
   };
 }
 export default useOperation;

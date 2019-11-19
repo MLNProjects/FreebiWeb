@@ -1,6 +1,12 @@
 import * as React from "react";
 
-const FormInput = ({ label, name, type, placeholder, labelClass }) => {
+const FormInput = ({
+  label,
+  name,
+  type,
+  placeholder,
+  labelClass,
+}) => {
   return (
     <div>
       <p id="form-input-label">{label}</p>
