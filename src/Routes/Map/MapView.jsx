@@ -1,7 +1,7 @@
 import 'leaflet/dist/leaflet.css';
 import React from 'react';
 import L from 'leaflet';
-import { Map, Marker, Popup, Polyline, TileLayer, ZoomControl } from 'react-leaflet';
+import { Map, Marker, Popup, Polyline, TileLayer, ZoomControl, Circle } from 'react-leaflet';
 import myMarker from './blueMarker.png';
 import otherMarker from './yellowMarker.png';
 import iconShadow from 'leaflet/dist/images/marker-shadow.png';
@@ -22,7 +22,7 @@ let otherLocationsIcon = L.icon({
 
 const DEFAULT_CENTER = [59.35, 18.06];
 //https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-const MapView = ({ myLocations, locations, path }) => {
+const MapView = ({ myLocations, locations, points, path }) => {
 	return (
 		<Map
 			zoomControl={false}
@@ -58,6 +58,7 @@ const MapView = ({ myLocations, locations, path }) => {
 					);
 				})}
 			{path && <Polyline color="blue" positions={path} />}
+			{points && points.map(p => <Circle center={p} radius={0.1}></Circle>)}
 		</Map>
 	);
 };
