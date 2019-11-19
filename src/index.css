@@ -106,6 +106,7 @@ code {
   margin: 2rem 0 1rem 0;
   width: 8rem;
   text-transform: uppercase;
+  text-decoration: none;
 }
 
 #form-header {
@@ -131,4 +132,25 @@ code {
 #form-link:hover {
   filter: brightness(85%);
   cursor: pointer;
+}
+a {
+  text-decoration: none;
+  color: var(--background-color);
+}
+a:visited {
+  text-decoration: none;
+  color: var(--background-color);
+}
+a:hover {
+  text-decoration: none;
+  color: var(--background-color);
+}
+a:focus {
+  text-decoration: none;
+  color: var(--background-color);
+}
+a:hover,
+a:active {
+  text-decoration: none;
+  color: var(--background-color);
 }

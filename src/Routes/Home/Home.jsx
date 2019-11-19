@@ -17,8 +17,16 @@ const Home = () => {
         </div>
       </div>
       <div className="link-wrapper">
-        <Link to="/signin">signin</Link>
-        <Link to="/signup">signup</Link>
+        <Link to="/signin">
+          <button id="form-button" className="primary">
+            sign in
+          </button>
+        </Link>
+        <Link to="/signup">
+          <button id="form-button" className="primary">
+            sign up
+          </button>
+        </Link>
       </div>
     </div>
   );
