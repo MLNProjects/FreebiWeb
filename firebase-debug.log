@@ -1,0 +1,40 @@
+[debug] [2019-11-19T20:31:34.076Z] ----------------------------------------------------------------------
+[debug] [2019-11-19T20:31:34.078Z] Command:       /usr/local/Cellar/node/12.12.0/bin/node /usr/local/bin/firebase deploy
+[debug] [2019-11-19T20:31:34.078Z] CLI Version:   7.7.0
+[debug] [2019-11-19T20:31:34.078Z] Platform:      darwin
+[debug] [2019-11-19T20:31:34.078Z] Node Version:  v12.12.0
+[debug] [2019-11-19T20:31:34.079Z] Time:          Tue Nov 19 2019 22:31:34 GMT+0200 (Eastern European Standard Time)
+[debug] [2019-11-19T20:31:34.079Z] ----------------------------------------------------------------------
+[debug] [2019-11-19T20:31:34.079Z] 
+[debug] [2019-11-19T20:31:34.099Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-11-19T20:31:34.099Z] > authorizing via signed-in user
+[debug] [2019-11-19T20:31:34.099Z] [iam] checking project freebi-67704 for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
+[debug] [2019-11-19T20:31:34.101Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/freebi-67704:testIamPermissions  
+
+[debug] [2019-11-19T20:31:35.110Z] <<< HTTP RESPONSE 200
+[debug] [2019-11-19T20:31:35.112Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/freebi-67704  
+ 
+[debug] [2019-11-19T20:31:35.394Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'freebi-67704'...
+[info] 
+[info] i  deploying database, hosting
+[info] i  database: checking rules syntax...
+[debug] [2019-11-19T20:31:35.398Z] >>> HTTP REQUEST PUT https://freebi-67704.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  "rules": {
+    ".read": "auth != null",
+    ".write": "auth != null"
+  }
+}
+[debug] [2019-11-19T20:31:36.194Z] <<< HTTP RESPONSE 200
+[info] ✔  database: rules syntax for database freebi-67704 is valid
+[debug] [2019-11-19T20:31:36.196Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/freebi-67704/versions  
+
+[debug] [2019-11-19T20:31:38.028Z] <<< HTTP RESPONSE 200
+[info] i  hosting[freebi-67704]: beginning deploy...
+[info] i  hosting[freebi-67704]: found 4 files in build
+[debug] [2019-11-19T20:31:38.052Z] [hosting] hash cache [YnVpbGQ] stored for 4 files
+[debug] [2019-11-19T20:31:38.052Z] [hosting][hash queue][FINAL]
+[debug] [2019-11-19T20:31:38.052Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/freebi-67704/versions/250ef76385bf4524:populateFiles  
+ <request body omitted>
